@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+	--clr-first: #f21640;
+	--clr-last: #bf0981;
+	--clr-label: #8b33c7;
+	--clr-input: #721eab;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1 {
+	font-size: 3.75em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.gradient-text {
+	background: -webkit-linear-gradient(left, var(--clr-first), var(--clr-last));
+	background: -o-linear-gradient(right, var(--clr-first), var(--clr-last));
+	background: -moz-linear-gradient(right, var(--clr-first), var(--clr-last));
+	background: linear-gradient(to right, var(--clr-first), var(--clr-last));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+header {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 90%;
+	margin: 0 1em;
+	padding: 0 1em;
+}
+
+.container div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1.5em 0;
+	gap: 0.75em
+}
+
+.container label {
+	text-align: center;
+	color: var(--clr-label);
+	font-size: 1.25rem;
+}
+
+.container input {
+	width: 100%;
+	border: none;
+	color: var(--clr-input);
+	border-bottom: 1px solid var(--clr-label);
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.container div>input:focus {
+	outline: none;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	border: none;
+	font-size: 1.3rem;
+	color: white;
+	padding: 10px;
+	margin-top: 40px;
+	border-radius: 0.125em;
+
+	background: -webkit-linear-gradient(left, var(--clr-first), var(--clr-last));
+	background: -o-linear-gradient(right, var(--clr-first), var(--clr-last));
+	background: -moz-linear-gradient(right, var(--clr-first), var(--clr-last));
+	background: linear-gradient(to right, var(--clr-first), var(--clr-last));
+}
+
+button:focus,
+button:hover {
+	opacity: .75;
+}
+
+.totalAmount {
+	font-size: 2.25em;
+	margin: 2em 0;
+	text-align: center;
+	padding: .5em;
+	margin: .5em;
+}
+
+@media(min-width:900px) {
+	.container {
+		flex-direction: row;
+		gap: 1em;
+		justify-content: center;
+	}
+}

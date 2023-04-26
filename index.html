@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Calculadora de Crédito</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="./assets/css/style.css" rel="stylesheet">
+		<script defer src="./assets/js/script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<h1 class="gradient-text">easypago</h1>
+		</header>
+		<main>
+			<section class="container">
+				<div>
+					<label for="loanAmount">¿Cuánto quieres pagar?</label>
+					<input type="number" name="loanAmount" id="loanAmount" min="1">
+				</div>
+				<div>
+					<label for="interestRate">¿Cuánto interes(%) debes pagar?</label>
+					<input type="number" name="interestRate" id="interestRate" min="1" max="100">
+				</div>
+				<div>
+					<label for="loanTerm">¿En cuántas cuotas puedes pagarlo?</label>
+					<input type="number" name="loanTerm" id="loanTerm" min="1" max="36">
+				</div>
+			</section>
+			<section class="btn">
+				<button type="submit" id="btnSubmit">¿Cómo lo pago?</button>
+			</section>
+			<section1 id="totalAmount" class="totalAmount gradient-text">
+				</section>
+		</main>
+	</body>
+
+</html>
